@@ -1,10 +1,10 @@
 {
   "name": "@webfullset/wfsgoto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WFSgoto plugin - A simple plugin for animated transition between page blocks.",
   "main": "wfsgoto.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/webfullset/wfsgoto/issues"
   },
-  "homepage": "https://github.com/webfullset/wfsgoto#readme"
+  "homepage": "https://github.com/webfullset/wfsgoto#readme",
+  "publishConfig": {
+    "@webfullset:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "@webfullset/wfsgoto": "1.0.1"
+  }
 }
