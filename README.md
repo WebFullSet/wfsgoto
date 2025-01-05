@@ -46,18 +46,20 @@ Implementing wfsgoto.js into your project is easy.
 Add script right before closing ``</body>`` tag:
 
 ```html
-<script src="https://your_domain.com/js/wfsgoto.js"></script>
+<script src="js/wfsgoto.js"></script>
 <script>
-    const  WebGoTo = new WFSgoto({
-            elements: '.btn-scroll',
-            duration: 1300,
-            indicatorGoTop: 'go-to-top',
-            typePath: '#',
-            showGoToTopActiveClass: 'evo-gototop-visible',
-            showGoToTop: 'top',
-            spacebeforeElement: 200,
-            mobileFinish: 992,
-            mibileSpacebeforeElement: 0
+    document.addEventListener('DOMContentLoaded', function() {
+            const WFSgoto = new WFSgoto({
+                elements: '.goto'
+                duration: '1300'
+                indicatorGoTop: 'go-to-top'
+                typePath: '#'
+                showGoToTopActiveClass: 'evo-gototop-visible'
+                showGoToTop: 'top'
+                spacebeforeElement: '200'
+                mobileFinish: '0'
+                mibileSpacebeforeElement: '.goto'
+            })
         });
 </script>
 ```
