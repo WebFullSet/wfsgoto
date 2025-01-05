@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/webfullset/wfsgoto#readme",
   "publishConfig": {
-    "@webfullset:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "@webfullset/wfsgoto": "1.0.1"
